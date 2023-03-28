@@ -33,3 +33,84 @@ export const Container = styled.div`
         
     }
 `
+
+export const Overlay = styled.div`
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+` 
+export const Box = styled.section`
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid;
+`
+export const Header = styled.header`
+    display: flex;
+    justify-content: space-between;
+    background-color: #2e2f44;
+    color: white;
+    line-height: 2.5rem;
+    padding-left: 1rem;
+
+    strong { 
+        color: yellow;
+    }
+
+    button {
+        cursor: pointer;
+        background-color: #2e2f44;
+        border: none;
+        color: white;
+        padding: 0.5rem 1rem;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    
+`
+
+export const Main = styled.main`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    
+    input {
+        width: 20rem;
+        border: 1px solid gray;
+        border-radius: 0.3rem;
+        height: 1.3rem;
+    }
+    select {
+        width: 15rem;
+        border: 1px solid gray;
+        border-radius: 0.3rem;
+        height: 1.5rem;
+    }
+
+`
+export const Footer = styled.footer`
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    
+    button {
+        cursor: pointer;
+        border: 1px solid gray;
+        border-radius: 0.3rem;
+        line-height: 1.3rem;
+    }
+
+`
