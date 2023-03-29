@@ -15,7 +15,7 @@ export const Container = styled.div`
     }
 
     div {
-        width: 80%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         padding: 1rem;
@@ -29,9 +29,24 @@ export const Container = styled.div`
     }
 
     button { 
-        cursor: pointer;
-        
+        cursor: pointer;  
+        height: 2rem;
+        border-radius: 0.5rem;
+        width: 10%;
+
+        &:hover { 
+            background-color: #bb93e1;
+        }
     }
+
+    @media (max-width: 608px) {
+        flex-direction: column;
+
+        div { 
+            align-items: center;
+        }
+    }
+    
 `
 
 export const Overlay = styled.div`
@@ -46,13 +61,22 @@ export const Overlay = styled.div`
     align-items: center;
 ` 
 export const Box = styled.section`
-    width: 50vw;
-    height: 50vh;
+    width: 50%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     background-color: white;
     border: 1px solid;
 `
+export const BoxFinal = styled.section`
+    width: 50%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid;
+`
+
 export const Header = styled.header`
     display: flex;
     justify-content: space-between;
@@ -74,6 +98,7 @@ export const Header = styled.header`
 
         &:hover {
             color: black;
+
         }
     }
 
@@ -84,33 +109,48 @@ export const Main = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     
     input {
-        width: 20rem;
+        width: 90%;
         border: 1px solid gray;
         border-radius: 0.3rem;
-        height: 1.3rem;
+        height: 2rem;
+        margin-bottom: 3rem;
     }
     select {
-        width: 15rem;
+        width: 90%;
         border: 1px solid gray;
         border-radius: 0.3rem;
-        height: 1.5rem;
+        height: 2rem;
     }
 
 `
 export const Footer = styled.footer`
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     padding-top: 3rem;
+    gap: 3rem;
     
     button {
         cursor: pointer;
         border: 1px solid gray;
         border-radius: 0.3rem;
         line-height: 1.3rem;
-    }
+        width: 90%;
+        height: 2rem;
 
+        &:hover { 
+            background-color: #bb93e1;
+        }
+    }
+`
+
+export const Message = styled.p`
+    color: red;
+    margin: -3;
+    height: 0.3rem;
+    font-size: 1rem;
 `
